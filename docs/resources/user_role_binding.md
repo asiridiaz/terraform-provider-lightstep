@@ -14,7 +14,6 @@ description: |-
   The valid project roles are:
   * Project Editor
   * Project Viewer
-  **NOTE:** With the [December 2024 custom roles release](https://docs.lightstep.com/changelog/custom-roles), Project Editor and Project Viewer no longer appear in the Cloud Observability UI. However, for consistency, the Terraform resource still supports those roles. You can assign Project Editor and Project Viewer in Terraform, and users get the expected access.
   Changes to both organization- and project-level roles for the same user can cause race conditions.
   We suggest these changes be made in two steps.
   * When lowering a user's organization-level role and upping their project-level role, first change their organization role.
@@ -40,9 +39,6 @@ The valid project roles are:
 * Project Editor
 * Project Viewer
 
-**NOTE:** With the [December 2024 custom roles release](https://docs.lightstep.com/changelog/custom-roles), Project Editor and Project Viewer no longer appear in the Cloud Observability UI.
-However, for consistency, the Terraform resource still supports those roles.
-You can assign Project Editor and Project Viewer in Terraform, and users get the expected access.
 
 Changes to both organization- and project-level roles for the same user can cause race conditions. 
 We suggest these changes be made in two steps. 
